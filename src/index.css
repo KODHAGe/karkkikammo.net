@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+  font-family: 'Assistant', 'Helvetica', sans-serif;  
+  font-weight: 600;
+}
+
+#react-root {
+  height: 100%;
+}
+
+a {
+  color: #333;
+  transition: opacity  0.2s linear;  
+}
+
+a:visited {
+  color: #333;
+}
+
+a:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s linear;
+}

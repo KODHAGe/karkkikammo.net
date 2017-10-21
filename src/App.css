@@ -1,0 +1,45 @@
+.App {
+  height: 100%;
+}
+
+.App header {
+  height: 100%;
+}
+
+.App main {
+  height: 100%;
+  column-count: 3;  
+  column-gap: 0;  
+  column-fill: auto;
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .App header {
+    flex: 1;
+    height: 100%;
+    align-self: center;
+    justify-content: center;
+  }
+  
+  .App main {
+    flex: 3;
+    height: 100%;
+    column-count: 3;  
+    column-gap: 0;  
+    column-fill: auto;
+    height: auto;
+    width: 75%;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+}

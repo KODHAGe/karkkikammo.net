@@ -1,0 +1,15 @@
+.Header {
+  text-align: center;
+}
+
+.Header img {
+  width: 150px;
+}
+
+@media (min-width: 900px) {
+  .Header {
+    position: fixed;
+    left: 0;
+    width: 25%;
+  }
+}
