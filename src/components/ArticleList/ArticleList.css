@@ -1,0 +1,23 @@
+.ArticleList {
+  height: 100%;
+  column-count: 3;  
+  column-gap: 0;  
+  column-fill: auto;
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .ArticleList {
+    flex: 3;
+    height: 100%;
+    column-count: 3;  
+    column-gap: 0;  
+    column-fill: auto;
+    height: auto;
+    width: 75%;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+}
