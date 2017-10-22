@@ -1,34 +1,25 @@
 // React
 import React, { Component } from 'react';
+import { Route, Link, Redirect} from 'react-router-dom';
 
 //Style
 import './App.css';
 
 // Components
-import Article from './components/Article';
-import Header from './components/Header';
+import Header from './components/Header/Header';
+import ArticleList from './components/ArticleList/ArticleList';
+import SingleArticle from './components/SingleArticle/SingleArticle';
 
-// Some mock data
-import mockdata from './data/mock.js';
 
 // Main thing, woop
 class App extends Component {
   render() {
-    const articles = mockdata.map((article) => (
-      <Article
-        id={article.id}
-        title={article.title}
-        description={article.description}
-        img={article.img}
-        url={article.url}
-      />
-    ));
     return (
       <div className="App page">
         <Header />
-        <main>
-          {articles}
-        </main>
+        {/* Routing, for front page & single article view*/}
+        <Route exact path='/' component={ArticleList} />
+        <Route path='/works/:id' component={SingleArticle} />
       </div>
     );
   }
